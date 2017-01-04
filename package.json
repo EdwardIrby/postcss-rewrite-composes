@@ -17,5 +17,20 @@
   },
   "engines" : {
     "node" : ">=6.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwardIrby/postcss-rewrite-composes.git"
+  },
+  "keywords": [
+    "rewrite",
+    "postcss",
+    "composes",
+    "css modules",
+    "alias"
+  ],
+  "bugs": {
+    "url": "https://github.com/EdwardIrby/postcss-rewrite-composes/issues"
+  },
+  "homepage": "https://github.com/EdwardIrby/postcss-rewrite-composes#readme"
 }
