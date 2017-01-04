@@ -1,1 +1,10 @@
-// run "npm run example" in terminal
+.a {
+  composes: ClassToBeComposes from 'mercury-storybook/build/es6/a.css';
+  color: blue;
+  background-color: red;
+}
+
+.b {
+  composes: ClassToBeComposes from "mercury-storybook/build/es6/a.css";
+  composes: a;
+}

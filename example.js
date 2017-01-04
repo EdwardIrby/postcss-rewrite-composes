@@ -1,8 +1,8 @@
-const aliasComposes = require('./index.js');
+const rewireComposes = require('./index.js');
 const fs = require('fs');
 const postcss = require('postcss');
 fs.readFile('example/src/test.css', (err, css) => {
-  postcss([aliasComposes({
+  postcss([rewireComposes({
     prefix: 'mercury-storybook',
     subPath: 'build/es6'
   })])
