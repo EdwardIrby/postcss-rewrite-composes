@@ -1,0 +1,21 @@
+{
+  "name": "postcss-alias-composes",
+  "version": "1.0.0",
+  "description": "Rewrites aliased paths used in your CSS Modules to the correct path",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape index.js test/index.js",
+    "example": "node example.js"
+  },
+  "author": "Edward Irby",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "postcss": "^5.2.8"
+  },
+  "engines" : {
+    "node" : ">=6.9.1"
+  }
+}

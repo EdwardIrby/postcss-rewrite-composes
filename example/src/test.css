@@ -1,0 +1,10 @@
+.a {
+  composes: ClassToBeComposes from 'mercury-storybook/a.css';
+  color: blue;
+  background-color: red;
+}
+
+.b {
+  composes: ClassToBeComposes from "mercury-storybook/a.css";
+  composes: a;
+}
