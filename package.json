@@ -1,7 +1,7 @@
 {
-  "name": "postcss-alias-composes",
+  "name": "postcss-rewrite-composes",
   "version": "1.0.0",
-  "description": "Rewrites aliased paths used in your CSS Modules to the correct path",
+  "description": "Rewrites aliased paths used in your CSS Modules composes rules to the correct path",
   "main": "index.js",
   "scripts": {
     "test": "tape index.js test/index.js",
