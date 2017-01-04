@@ -2,7 +2,8 @@
 
 ## The problem
 When using your own internal component library or libraries like Tachyons & Basscss, with PostCSS + CSSModules you often want to compose the utility classes from these libraries to build more complex components in your app.
-** However what you don't want to do is have to write paths like the following: **
+
+**However what you don't want to do is have to write paths like the following:**
 ```css
   .Tachyons {
     composes: aspect-ration from 'tachyons/src/_aspect-ratios.css';
@@ -15,7 +16,8 @@ When using your own internal component library or libraries like Tachyons & Bass
     composes: Input from 'MyFramework/build/es6/Input/Input.css';
   }
 ```
-** Instead we would like to write them like to write them like this**
+
+**Instead we would like to write them like to write them like this**
 
 ```css
   .Tachyons {
@@ -29,7 +31,8 @@ When using your own internal component library or libraries like Tachyons & Bass
     composes: Input from 'MyFramework/Input/Input.css';
   }
 ```
-** So that they match our JS imports **
+
+**So that they match our JS imports**
 ```js
   import Input from 'MyFramework/Input/Input.js'
 ```
@@ -46,10 +49,10 @@ While it's true you could use an alias in webpack for building your bundle and e
 **Run** ```npm run example``` to see example output.
 
 ## Options
-### Prefix
+### prefix
 - Type: ```string```
-- Alias path prefix
+- Alias path prefix **Note no slashes at the end of the prefix.**
 
 ### subPath
 - Type: ```string```
-- Subpath removed when you wrote your aliased composes rules. **Note no slashes at the begging or end of the subpath.**
+- Subpath removed when you wrote your aliased composes rules. **Note no slashes at the beginning or end of the subpath.**
